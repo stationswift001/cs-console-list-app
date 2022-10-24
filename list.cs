@@ -15,16 +15,15 @@ public class HelloWorld
         Console.WriteLine("Welcome to the list!");
         Console.WriteLine("Type something and press enter to add it!");
 		cki = Console.ReadKey();
-        if((cki.Modifiers & ConsoleModifiers.Alt) = 0)
+        if((cki.Modifiers & ConsoleModifiers.Alt) = 0)    {
 		string latestTest = Console.ReadLine();
         //Console.WriteLine(latestTest);
         list.Add(latestTest);
-        //int numberList = 0;
-		//numberList = list.FindIndex() + 1;
-		//Console.WriteLine(numberList);
-        //list.ForEach( + Console.WriteLine);
+        Console.WriteLine("Added!")
+        }
 		foreach(String item in list){
 			Console.WriteLine((list.IndexOf(item) + 1) + ": " + item);
+            
 		}
     }
 }
